@@ -1,0 +1,44 @@
+<br/>
+<div>
+    <mat-card class="card mat-elevation-z6">
+        <mat-card-header>
+            <mat-card-title>Global Cases</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <table class="table">
+                <tr>
+                    <td>New Confirmed</td>
+                    <td>:</td>
+                    <td>{{global?.NewConfirmed}}</td>
+                </tr>
+                <tr>
+                    <td>New Deaths</td>
+                    <td>:</td>
+                    <td>{{global?.NewDeaths}}</td>
+                </tr>
+                <tr>
+                    <td>New Recovered</td>
+                    <td>:</td>
+                    <td>{{global?.NewRecovered}}</td>
+                </tr>
+                <tr>
+                    <td>Total Confirmed</td>
+                    <td>:</td>
+                    <td>{{global?.TotalConfirmed}}</td>
+                </tr>
+                <tr>
+                    <td>Total Deaths</td>
+                    <td>:</td>
+                    <td>{{global?.TotalDeaths}}</td>
+                </tr>
+                <tr>
+                    <td>Total Recovered</td>
+                    <td>:</td>
+                    <td>{{global?.TotalRecovered}}</td>
+                </tr>
+            </table>
+        </mat-card-content>
+    </mat-card>
+</div>
+<br/>
+<div id="map" class="map-container"></div>

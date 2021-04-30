@@ -1,0 +1,53 @@
+<br/>
+<br/>
+<div class="data-view">
+    <form>
+        <label class="label" for="country">Search here:</label>
+        <input id="country" type="text" [formControl]="control" [matAutocomplete]="auto">
+        <mat-autocomplete #auto="matAutocomplete">
+            <mat-option *ngFor="let country of filteredCountries | async" [value]="country" (click)="onGetData(country)">
+                {{country}}
+            </mat-option>
+        </mat-autocomplete>
+        <button class="search-btn" mat-raised-button color="primary">search</button>
+    </form>
+    <mat-card>
+        <table class="table">
+            <tr>
+                <td>Country</td>
+                <td>:</td>
+                <td>{{view_data?.Country}}</td>
+            </tr>
+            <tr>
+                <td>New Confirmed</td>
+                <td>:</td>
+                <td>{{view_data?.NewConfirmed}}</td>
+            </tr>
+            <tr>
+                <td>New Deaths</td>
+                <td>:</td>
+                <td>{{view_data?.NewDeaths}}</td>
+            </tr>
+            <tr>
+                <td>New Recovered</td>
+                <td>:</td>
+                <td>{{view_data?.NewRecovered}}</td>
+            </tr>
+            <tr>
+                <td>Total Confirmed</td>
+                <td>:</td>
+                <td>{{view_data?.TotalConfirmed}}</td>
+            </tr>
+            <tr>
+                <td>Total Deaths</td>
+                <td>:</td>
+                <td>{{view_data?.TotalDeaths}}</td>
+            </tr>
+            <tr>
+                <td>Total Recovered</td>
+                <td>:</td>
+                <td>{{view_data?.TotalRecovered}}</td>
+            </tr>
+        </table>
+    </mat-card>
+</div>
