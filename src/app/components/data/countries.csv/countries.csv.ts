@@ -1066,5 +1066,395 @@ export const csv = [
         name: 'Pitcairn Islands',
         latitude: -24.703615,
         longitude: -127.439308																																																																																		
-    },																															
-]
+    },
+    {
+        country: 'PR',  
+        name: 'Puerto Rico',
+        latitude: 18.220833,
+        longitude: -66.590149																																																																																			
+    },
+    {
+        country: 'PS',  
+        name: 'Palestinian Territories',
+        latitude: 31.952162,
+        longitude: 35.233154																																																																																				
+    },							
+    {
+        country: 'PT',  
+        name: 'Portugal',
+        latitude: 39.399872,
+        longitude: -8.224454																																																																																					
+    },							
+    {
+        country: 'PW',  
+        name: 'Palau',
+        latitude: 7.51498,
+        longitude: 134.58252																																																																																						
+    },							
+    {
+        country: 'PY',  
+        name: 'Paraguay',
+        latitude: -23.442503,
+        longitude: -58.443832																																																																																							
+    },							
+    {
+        country: 'QA',  
+        name: 'Qatar',
+        latitude: 25.354826,
+        longitude: 51.183884																																																																																								
+    },							
+    {
+        country: 'RE',  
+        name: 'Réunion',
+        latitude: -21.115141,
+        longitude: 55.536384																																																																																									
+    },							
+    {
+        country: 'RO',  
+        name: 'Romania',
+        latitude: 45.943161,
+        longitude: 24.96676																																																																																									
+    },						
+    {
+        country: 'RS',  
+        name: 'Serbia',
+        latitude: 44.016521,
+        longitude: 21.005859																																																																																										
+    },						   	
+    {
+        country: 'RU',  
+        name: 'Russia',
+        latitude: 61.52401,
+        longitude: 105.318756																																																																																											
+    },						   	
+    {
+        country: 'RW',  
+        name: 'Rwanda',
+        latitude: -1.940278,
+        longitude: 29.873888																																																																																												
+    },						   	
+    {
+        country: 'SA',  
+        name: 'Saudi Arabia',
+        latitude: 23.885942,
+        longitude: 45.079162																																																																																												
+    },						
+    {
+        country: 'SB',  
+        name: 'Solomon Islands',
+        latitude: -9.64571,
+        longitude: 160.156194																																																																																													
+    },						   	
+    {
+        country: 'SC',  
+        name: 'Seychelles',
+        latitude: -4.679574,
+        longitude: 55.491977																																																																																														
+    },						   	
+    {
+        country: 'SD',  
+        name: 'Sudan',
+        latitude: 12.862807,
+        longitude: 30.217636																																																																																														
+    },						   	
+    {
+        country: 'SE',  
+        name: 'Sweden',
+        latitude: 60.128161,
+        longitude: 18.643501																																																																																															
+    },						   	
+    {
+        country: 'SG',  
+        name: 'Singapore',
+        latitude: 1.352083,
+        longitude: 103.819836																																																																																																
+    },						   	
+    {
+        country: 'SH',  
+        name: 'Saint Helena',
+        latitude: -24.143474,
+        longitude: -10.030696																																																																																																	
+    },						   	
+    {
+        country: 'SI',  
+        name: 'Slovenia',
+        latitude: 46.151241,
+        longitude: 14.995463																																																																																																		
+    },						   	
+    {
+        country: 'SJ',  
+        name: 'Svalbard and Jan Mayen',
+        latitude: 77.553604,
+        longitude: 23.670272																																																																																																			
+    },						   	
+    {
+        country: 'SK',  
+        name: 'Slovakia',
+        latitude: 48.669026,
+        longitude: 19.699024																																																																																																				
+    },
+    {
+        country: 'SL',  
+        name: 'Sierra Leone',
+        latitude: 8.460555,
+        longitude: -11.779889																																																																																																					
+    },						   	
+    {
+        country: 'SM',  
+        name: 'San Marino',
+        latitude: 43.94236,
+        longitude: 12.457777																																																																																																						
+    },						   	
+    {
+        country: 'SN',  
+        name: 'Senegal',
+        latitude: 14.497401,
+        longitude: -14.452362																																																																																																							
+    },						   	
+    {
+        country: 'SO',  
+        name: 'Somalia',
+        latitude: 5.152149,
+        longitude: 46.199616																																																																																																								
+    },						   	
+    {
+        country: 'SR',  
+        name: 'Suriname',
+        latitude: 3.919305,
+        longitude: -56.027783																																																																																																									
+    },						   	
+    {
+        country: 'ST',  
+        name: 'São Tomé and Príncipe',
+        latitude: 0.18636,
+        longitude: 6.613081																																																																																																										
+    },						
+    {
+        country: 'SV',  
+        name: 'El Salvador',
+        latitude: 13.794185,
+        longitude: -88.89653																																																																																																											
+    },						   	
+    {
+        country: 'SY',  
+        name: 'Syria',
+        latitude: 34.802075,
+        longitude: 38.996815																																																																																																												
+    },						   	
+    {
+        country: 'SZ',  
+        name: 'Swaziland',
+        latitude: -26.522503,
+        longitude: 31.465866																																																																																																													
+    },						   	
+    {
+        country: 'TC',  
+        name: 'Turks and Caicos Islands',
+        latitude: 21.694025,
+        longitude: -71.797928																																																																																																														
+    },
+    {
+        country: 'TD',  
+        name: 'Chad',
+        latitude: 15.454166,
+        longitude: 18.732207																																																																																																															
+    },						   	
+    {
+        country: 'TF',  
+        name: 'French Southern Territories',
+        latitude: -49.280366,
+        longitude: 69.348557																																																																																																																
+    },						   	
+    {
+        country: 'TG',  
+        name: 'Togo',
+        latitude: 8.619543,
+        longitude: 0.824782																																																																																																																	
+    },						
+    {
+        country: 'TH',  
+        name: 'Thailand',
+        latitude: 15.870032,
+        longitude: 100.992541																																																																																																																		
+    },						   	
+    {
+        country: 'TJ',  
+        name: 'Tajikistan',
+        latitude: 38.861034,
+        longitude: 71.276093																																																																																																																		
+    },						
+    {
+        country: 'TK',  
+        name: 'Tokelau',
+        latitude: -8.967363,
+        longitude: -171.855881																																																																																																																		
+    },
+    {
+        country: 'TL',  
+        name: 'Timor-Leste',
+        latitude: -8.874217,
+        longitude: 125.727539																																																																																																																			
+    },						   	
+    {
+        country: 'TM',  
+        name: 'Turkmenistan',
+        latitude: 38.969719,
+        longitude: 59.556278																																																																																																																				
+    },						   	
+    {
+        country: 'TN',  
+        name: 'Tunisia',
+        latitude: 33.886917,
+        longitude: 9.537499																																																																																																																					
+    },						
+    {
+        country: 'TO',  
+        name: 'Tonga',
+        latitude: -21.178986,
+        longitude: -175.198242																																																																																																																					
+    },						   	
+    {
+        country: 'TR',  
+        name: 'Turkey',
+        latitude: 38.963745,
+        longitude: 35.243322																																																																																																																						
+    },						   	
+    {
+        country: 'TT',  
+        name: 'Trinidad and Tobago',
+        latitude: 10.691803,
+        longitude: -61.222503																																																																																																																							
+    },						   	
+    {
+        country: 'TV',  
+        name: 'Tuvalu',
+        latitude: -7.109535,
+        longitude: 177.64933																																																																																																																								
+    },
+    {
+        country: 'TW',  
+        name: 'Taiwan',
+        latitude: 23.69781,
+        longitude: 120.960515																																																																																																																								
+    },						   	
+    {
+        country: 'TZ',  
+        name: 'Tanzania',
+        latitude: -6.369028,
+        longitude: 34.888822																																																																																																																									
+    },						   	
+    {
+        country: 'UA',  
+        name: 'Ukraine',
+        latitude: 48.379433,
+        longitude: 31.16558																																																																																																																										
+    },						
+    {
+        country: 'UG',  
+        name: 'Uganda',
+        latitude: 1.373333,
+        longitude: 32.290275																																																																																																																											
+    },						   							   
+    {
+        country: 'US',  
+        name: 'United States',
+        latitude: 37.09024,
+        longitude: -95.712891																																																																																																																												
+    },
+    {
+        country: 'UY',  
+        name: 'Uruguay',
+        latitude: -32.522779,
+        longitude: -55.765835																																																																																																																													
+    },						   	
+    {
+        country: 'UZ',  
+        name: 'Uzbekistan',
+        latitude: 41.377491,
+        longitude: 64.585262																																																																																																																														
+    },						
+    {
+        country: 'VA',  
+        name: 'Vatican City',
+        latitude: 41.902916,
+        longitude: 12.453389																																																																																																																															
+    },						   	
+    {
+        country: 'VC',  
+        name: 'Saint Vincent and the Grenadines',
+        latitude: 12.984305,
+        longitude: -61.287228																																																																																																																																
+    },
+    {
+        country: 'VE',  
+        name: 'Venezuela',
+        latitude: 6.42375,
+        longitude: -66.58973																																																																																																																																	
+    },						   	
+    {
+        country: 'VG',  
+        name: 'British Virgin Islands',
+        latitude: 18.420695,
+        longitude: -64.639968																																																																																																																																		
+    },						   	
+    {
+        country: 'VI',  
+        name: 'U.S. Virgin Islands',
+        latitude: 18.335765,
+        longitude: -64.896335																																																																																																																																			
+    },						   	
+    {
+        country: 'VU',  
+        name: 'Vanuatu',
+        latitude: -15.376706,
+        longitude: 166.959158																																																																																																																																				
+    },						   	
+    {
+        country: 'WF',  
+        name: 'Wallis and Futuna',
+        latitude: -13.768752,
+        longitude: -177.156097																																																																																																																																					
+    },						   	
+    {
+        country: 'WS',  
+        name: 'Samoa',
+        latitude: -13.759029,
+        longitude: -172.104629																																																																																																																																						
+    },						   	
+    {
+        country: 'XK',  
+        name: 'Kosovo',
+        latitude: 42.602636,
+        longitude: 20.902977																																																																																																																																							
+    },						   	
+    {
+        country: 'YE',  
+        name: 'Yemen',
+        latitude: 15.552727,
+        longitude: 48.516388																																																																																																																																								
+    },						   	
+    {
+        country: 'YT',  
+        name: 'Mayotte',
+        latitude: -12.8275,
+        longitude: 45.166244																																																																																																																																								
+    },
+    {
+        country: 'ZA',  
+        name: 'South Africa',
+        latitude: -30.559482,
+        longitude: 22.937506																																																																																																																																								
+    },						 
+    {
+        country: 'ZM',  
+        name: 'Zambia',
+        latitude: -13.133897,
+        longitude: 27.849332																																																																																																																																									
+    },						  	
+    {
+        country: 'ZW',  
+        name: 'Zimbabwe',
+        latitude: -19.015438,
+        longitude: 29.154857																																																																																																																																										
+    }					  							   	
+]   

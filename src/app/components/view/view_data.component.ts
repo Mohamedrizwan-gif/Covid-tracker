@@ -1,9 +1,11 @@
-import { IndexService } from './../../pages/services/index.services';
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { FormControl } from '@angular/forms';
 import { Observable } from 'rxjs';
 import {startWith, map} from 'rxjs/operators';
+
+import { IndexService } from './../../pages/services/index.services';
+import { Summary, CountriesSummary } from '../interface/summary.interface';
 
 @Component({
   selector: 'app-view',
@@ -14,7 +16,7 @@ export class ViewDataComponent implements OnInit {
   public control = new FormControl();
   public countries = [];
   public filteredCountries: Observable<string[]>;
-  public view_data: any;
+  public view_data: CountriesSummary;
 
   constructor(private http: HttpClient, private indexService: IndexService) { }
 
@@ -23,8 +25,8 @@ export class ViewDataComponent implements OnInit {
       startWith(''),
       map(value => this._filter(value))
     );
-    this.http.get('https://api.covid19api.com/summary').subscribe((response:any) => {
-      response.Countries.map((data: any) => {
+    this.http.get('https://api.covid19api.com/summary').subscribe((response: Summary) => {
+      response.Countries.map((data: CountriesSummary) => {
         this.countries.push(data.Country);
       });
     });
@@ -43,10 +45,11 @@ export class ViewDataComponent implements OnInit {
     return value.toLowerCase().replace(/\s/g,'');
   }
 
-  onGetData(country: string) {
-    this.http.get('https://api.covid19api.com/summary').subscribe((response:any) => {
-      response.Countries.map((data: any) => {
-        if(data.Country === country) {
+  onGetData(country: string | undefined): void {
+    const search = country ? country : this.control.value;
+    this.http.get('https://api.covid19api.com/summary').subscribe((response: Summary) => {
+      response.Countries.map((data: CountriesSummary) => {
+        if(data.Country === search) {
           this.indexService.mapping.next(data);
           this.view_data = data;
         }

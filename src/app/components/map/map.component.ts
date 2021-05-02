@@ -6,6 +6,7 @@ import * as mapboxgl from 'mapbox-gl';
 import { environment } from './../../../environments/environment';
 import { IndexService } from './../../pages/services/index.services';
 import { csv } from '../data/countries.csv/countries.csv';
+import { Summary, CountriesSummary } from './../interface/summary.interface';
 
 @Component({
   selector: 'app-map',
@@ -20,12 +21,12 @@ export class MapComponent implements OnInit, OnDestroy {
   constructor(private http: HttpClient, private indexService: IndexService) { }
 
   ngOnInit(): void {
-    this.http.get('https://api.covid19api.com/summary').subscribe((response: any) => {
+    this.http.get('https://api.covid19api.com/summary').subscribe((response: Summary) => {
       this.global = response.Global;
     });
-    this.mapSubscription = this.indexService.mapping.subscribe(response => {
+    this.mapSubscription = this.indexService.mapping.subscribe((response: CountriesSummary) => {
       if(response) {
-        const area = csv.find((cs:any) => cs.name === response.Country);
+        const area = csv.find((cs:any) => cs.country === response.CountryCode);
         this.map = new mapboxgl.Map({
           container: 'map',
           style: 'mapbox://styles/mapbox/streets-v11',
@@ -43,6 +44,7 @@ export class MapComponent implements OnInit, OnDestroy {
 
   buildMap() {
       navigator.geolocation.getCurrentPosition((position:any) => {
+        console.log(position);
         this.map = new mapboxgl.Map({
           container: 'map',
           style: 'mapbox://styles/mapbox/streets-v11',

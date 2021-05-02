@@ -5,11 +5,11 @@
         <label class="label" for="country">Search here:</label>
         <input id="country" type="text" [formControl]="control" [matAutocomplete]="auto">
         <mat-autocomplete #auto="matAutocomplete">
-            <mat-option *ngFor="let country of filteredCountries | async" [value]="country" (click)="onGetData(country)">
+            <mat-option *ngFor="let country of filteredCountries | async" [value]="country">
                 {{country}}
             </mat-option>
         </mat-autocomplete>
-        <button class="search-btn" mat-raised-button color="primary">search</button>
+        <button class="search-btn" mat-raised-button color="primary" (click)="onGetData(undefined)">search</button>
     </form>
     <mat-card>
         <table class="table">
