@@ -9,7 +9,6 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { ViewDataComponent } from './components/view/view_data.component';
 import { MaterialModule } from './material/material.module';
 import { IndexComponent } from './pages/index/index.component';
-import { SpinnerComponent } from './components/spinner/spinner.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +16,6 @@ import { SpinnerComponent } from './components/spinner/spinner.component';
     MapComponent,
     ViewDataComponent,
     IndexComponent,
-    SpinnerComponent
   ],
   imports: [
     BrowserModule,
