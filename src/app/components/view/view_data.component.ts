@@ -17,6 +17,7 @@ export class ViewDataComponent implements OnInit {
   public countries = [];
   public filteredCountries: Observable<string[]>;
   public view_data: CountriesSummary;
+  public isLoading = false;
 
   constructor(private http: HttpClient, private indexService: IndexService) { }
 
@@ -46,6 +47,7 @@ export class ViewDataComponent implements OnInit {
   }
 
   onGetData(country: string | undefined): void {
+    this.isLoading = true;
     const search = country ? country : this.control.value;
     this.http.get('https://api.covid19api.com/summary').subscribe((response: Summary) => {
       response.Countries.map((data: CountriesSummary) => {
@@ -54,6 +56,7 @@ export class ViewDataComponent implements OnInit {
           this.view_data = data;
         }
       });   
+      this.isLoading = false;
      });
   }
 

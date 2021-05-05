@@ -14,15 +14,17 @@ import { Summary, CountriesSummary } from './../interface/summary.interface';
   styleUrls: ['./map.component.scss']
 })
 export class MapComponent implements OnInit, OnDestroy {
-  map: mapboxgl.Map;
-  global: any;
-  mapSubscription: Subscription;
+  private map: mapboxgl.Map;
+  public global: any;
+  private mapSubscription: Subscription;
+  public isLoading = true;
 
   constructor(private http: HttpClient, private indexService: IndexService) { }
 
   ngOnInit(): void {
     this.http.get('https://api.covid19api.com/summary').subscribe((response: Summary) => {
       this.global = response.Global;
+      this.isLoading = false;
     });
     this.mapSubscription = this.indexService.mapping.subscribe((response: CountriesSummary) => {
       if(response) {
@@ -44,7 +46,6 @@ export class MapComponent implements OnInit, OnDestroy {
 
   buildMap() {
       navigator.geolocation.getCurrentPosition((position:any) => {
-        console.log(position);
         this.map = new mapboxgl.Map({
           container: 'map',
           style: 'mapbox://styles/mapbox/streets-v11',

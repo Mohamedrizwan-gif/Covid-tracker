@@ -9,6 +9,8 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { ViewDataComponent } from './components/view/view_data.component';
 import { MaterialModule } from './material/material.module';
 import { IndexComponent } from './pages/index/index.component';
+import { OverlayComponent } from './components/overlay/overlay.component';
+import { SpinnerComponent } from './components/overlay/spinner/spinner.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +18,8 @@ import { IndexComponent } from './pages/index/index.component';
     MapComponent,
     ViewDataComponent,
     IndexComponent,
+    OverlayComponent,
+    SpinnerComponent
   ],
   imports: [
     BrowserModule,
